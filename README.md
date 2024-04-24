@@ -303,6 +303,12 @@ To password protect your wallet, run:
 
     ./bitcoin-cli encryptwallet "my pass phrase"
 
+To unlock this wallet and use it when you will load it you will have to provide the passphrase, to do so:
+
+    ./bitcoin-cli walletpassphrase "my pass phrase" 200
+
+With this command your wallet will be unlocked for 200 seconds. Tou can change this time limit with your desired.
+
 <div id="killbd"></div>
 
 ## How to Kill Bitcoin Deamon
